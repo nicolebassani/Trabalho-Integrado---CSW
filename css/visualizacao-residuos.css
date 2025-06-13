@@ -1,0 +1,275 @@
+/* CSS - VISUALIZAÇÃO DE RESÍDUOS */
+
+/* Seção Principal Interna (internal-main-section) */
+
+.internal-main-section {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    flex-grow: 1;
+    margin-top: -45px;
+    padding-top: -50px;
+    min-height: 90vh;
+}
+
+.internal-content-container { 
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.visualizacao-residuos-container {
+    margin: 0 auto; 
+}
+
+
+.internal-content-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+
+/* Estilos para o contêiner principal da box Visualização de Resíduos */
+.visualizacao-residuos-container {
+    background-color: #003208;
+    border-radius: 15px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    color: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.visualizacao-residuos-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.visualizacao-residuos-container .underline-title {
+    width: 60%;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0 auto 30px auto;
+}
+
+.visualizacao-residuos-container .conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.filtros-box {
+    flex: 1;
+    min-width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #385934;
+    text-align: left;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.filtros-box h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #385934;
+    text-align: center;
+}
+
+.filtros-box h2 .fas.fa-filter {
+    margin-right: 10px;
+    color: #385934;
+}
+
+.filtros-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    
+}
+
+.filtros-box ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filtros-box ul li input[type="radio"] {
+    margin-right: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #385934;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    
+}
+
+.filtros-box ul li input[type="radio"]:checked {
+    background-color: #385934;
+    border-color: #385934;
+}
+
+.filtros-box ul li input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.filtros-box ul li label {
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #385934;
+}
+
+.tabela-residuos {
+    flex: 2;
+    min-width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.tabela-residuos h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.tabela-residuos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabela-residuos th,
+.tabela-residuos td {
+    border: 1px solid #DDDDDD;
+    padding: 12px;
+    text-align: center;
+    color: #333333;
+}
+
+.tabela-residuos th {
+    background-color: #EEEEEE;
+    font-weight: bold;
+    color: #333333;
+}
+
+.tabela-residuos tbody tr:nth-child(odd) {
+    background-color: #F9F9F9;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .visualizacao-residuos-container .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filtros-box,
+    .tabela-residuos {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .visualizacao-residuos-container {
+        padding: 20px;
+    }
+    .visualizacao-residuos-container h1 {
+        font-size: 2em;
+    }
+    .filtros-box h2,
+    .tabela-residuos h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .internal-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .main-header /*, .main-footer*/ {
+        padding: 10px 0;
+    }
+    .internal-main-section {
+        padding: 40px 0;
+    }
+}

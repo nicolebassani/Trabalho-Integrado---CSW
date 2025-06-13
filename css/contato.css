@@ -1,0 +1,175 @@
+/* CSS PÁGINA CONTATO */
+
+/* Box de Contato */
+.contato-content {
+    background: #FFFFFF; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    overflow: hidden;
+    color: #000000;
+    padding: 0;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.contato-header {
+    background: linear-gradient(135deg, #257221, #003208);
+    color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+}
+
+.contato-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.contato-header p {
+    margin: 10px 0 0;
+    opacity: 0.9;
+}
+
+.contato-box {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Formulário */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #003208;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 14px 16px;
+    border: 2px solid #D9D9D9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #257221;
+    box-shadow: 0 0 0 4px rgba(37, 114, 33, 0.2);
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Botão de Enviar */
+.button-enviar {
+    background: linear-gradient(135deg, #257221, #003208);
+    color: #FFFFFF;
+    border: none;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: block; 
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(37, 114, 33, 0.2);
+}
+
+/* Informações de Contato */
+
+.contato-info { 
+    background-color: #F5F5F5; 
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contato-info h3 {
+    color: #003208;
+    margin-top: 0;
+}
+
+.contato-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #257221;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #003208; /* Cor da nossa paleta */
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+
+/* Telas maiores que tablets, mas menores que desktops (até 992px)*/
+@media (max-width: 992px) {
+    .contato-box {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-content {
+        margin: 20px;
+    }
+}
+
+/* Celulares Pequenos */
+@media (max-width: 480px) {
+    .contato-header h1 { 
+        font-size: 1.8rem;
+    }
+    
+    .contato-box {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,178 @@
+/* CSS HOME ORGANIZAÇÃO */
+
+/* Seção Principal Interna (internal-main-section) */
+
+.internal-main-section {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    flex-grow: 1;
+}
+
+.internal-content-container { 
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background-color: rgba(0, 50, 8, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 0 0 250px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.sidebar-user-info {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-user-info h2 {
+    font-size: 1.8em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+    background-color: #257221;
+    color: #FFFFFF;
+}
+
+/* Seção do Conteúdo Principal da Homepage (main-content-area) */
+
+.main-content-area {
+    flex-grow: 1;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.main-content-area h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-content-area .separador {
+    border: none;
+    height: 2px;
+    background-color: #257221;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.main-content-area p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+/* Responsividade Específica */
+
+/* Telas maiores que tablets, mas menores que desktops (até 992px)*/
+@media (max-width: 992px) {
+    
+    .internal-content-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .sidebar {
+        width: 100%; 
+        max-width: 400px; 
+        flex: none; 
+        margin-bottom: 30px;
+    }
+
+    .main-content-area {
+        width: 100%;
+        max-width: 800px; 
+        text-align: center; 
+    }
+
+    .main-content-area p {
+        text-align: center; 
+    }
+}
+
+/* Tablets e Celulares Grandes */
+@media (max-width: 768px) {
+    
+    .main-content-area h2 {
+        font-size: 2em;
+    }
+
+    .main-content-area p {
+        font-size: 1em;
+    }
+}
+
+/* Celulares Pequenos */
+@media (max-width: 480px) {
+
+    .sidebar {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .sidebar-user-info h2 {
+        font-size: 1.3em;
+    }
+
+    .sidebar-nav a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    .main-content-area {
+        padding: 20px;
+    }
+
+    .main-content-area h2 {
+        font-size: 1.8em;
+    }
+    .main-content-area p {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,87 @@
+/* "NAV BAR" SECUNDÁRIA */
+
+.top-content-overlay {
+    width: 100%;
+    padding: 10px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+    z-index: 2;
+    background-color: rgba(0, 50, 8, 0.5); 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;   
+    position: static; 
+    margin: 0;
+}
+
+.caminho-navegacao {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.caminho-navegacao span {
+    white-space: nowrap;
+}
+
+.caminho-navegacao a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.caminho-navegacao a:hover {
+    color: #D9D9D9;
+}
+
+.caminho-navegacao .separador {
+    margin: 0 8px;
+    color: #FFFFFF;
+}
+
+.caminho-navegacao span:last-child {
+    color: #FFFFFF;
+}
+
+.user-profile-display {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.profile-icon-placeholder {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Responsividade */
+
+/* Tablets e Celulares Grandes */
+@media (max-width: 768px) {
+    .top-content-overlay {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .caminho-navegacao, .user-profile-display {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .user-profile-display {
+        margin-top: 5px;
+    }
+}

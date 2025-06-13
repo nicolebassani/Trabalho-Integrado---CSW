@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrado Fortes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="./img/logo_fortes.png" alt="Logo Fortes Engenharia">
+                <h1>Fortes Engenharia</h1>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#proposito">Propósito</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main-section">
+        <section id="main-section-content" class="container">
+            <div class="main-section-text">
+                <h2>Conectamos Recicladores e Organizações Sociais que produzem resíduos</h2>
+                <hr class="separador">
+                <p>Cadastre-se agora e conheça todos os benefícios!</p>
+                <p>Faça parte dessa rede sustentável!</p>
+            </div>
+            <div class="login-box">
+                <h2>Entre ou Cadastre-se</h2>
+                <hr class="separador">
+
+                <div class="tipo-usuario-selecao">
+                    <input type="radio" id="tipo-reciclador" name="tipo_usuario" value="reciclador">
+                    <label for="tipo-reciclador" class="button-tipo-usuario">Reciclador</label>
+
+                    <span class="ou-divisor">ou</span>
+
+                    <input type="radio" id="tipo-organizacao" name="tipo_usuario" value="organizacao">
+                    <label for="tipo-organizacao" class="button-tipo-usuario">Organização Social</label>
+                </div>
+
+                <form id="login-form">
+                    <div class="login-form-class">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="login-form-class">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                <button type="submit" class="button-entrar">Entrar</button>
+                <button type="button" class="button-cadastrar">Cadastrar</button>
+                <p class="esqueceu-a-senha"><a href="#">Esqueceu sua senha? Clique aqui</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--SEÇÕES ESTÁTICAS-->
+    <section class="depoimento-section">
+        <div class="container">
+            <h2>Depoimento</h2>
+
+            <div class="depoimento-container-geral">
+
+                <div class="depoimento">
+                    <div class="depoimento-header">
+                    <img src="./img/avatar-ana.png" alt="Avatar de Ana Paula" class="avatar">
+                        <div class="info">
+                            <h4>Ana Paula</h4>
+                            <p class="identificacao">Gerente de Sustentabilidade da Kablin</p>
+                        </div>
+                    </div>
+                    <p class="citacao">"A Fortes Engenharia simplificou muito o descarte dos nossos recicláveis. Conexão rápida e um serviço que faz a diferença!".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="quem-somos" class="estatico-section container">
+        <h2>Quem Somos</h2>
+        <p>A Fortes Engenharia está no mercado de gestão de recursos há mais de 10 anos.</p>
+        <p>Somos uma organização comprometida com a sustentabilidade, a inovação social e a construção de um futuro mais justo, consciente e inclusivo.</p>
+        <p>Nosso trabalho vai muito além da coleta e da destinação de materiais recicláveis.</p>
+        <p>Atuamos de forma estratégica, planejada e humana, como uma ponte entre o que precisa ser descartado e o que pode (e deve!) ser transformado.</p>
+    </section>
+
+    <section id="proposito" class="estatico-section container">
+        <h2>Nosso Propósito</h2>
+        <p>Acreditamos que a transformação social e ambiental começa com conexões significativas.</p>
+        <p>Nosso principal objetivo é conectar Organizações Sociais que produzem resíduos a Recicladores, para que possam coletá-los de maneira mais eficaz.</p>
+        <p>Por meio da tecnologia, da responsabilidade social e da consciência ambiental, somos capazes de transformar o processo de coleta e de reaproveitamento de recicláveis em uma iniciativa mais justa, eficiente e humana.</p>
+    </section>
+ 
+    <section id="projetos" class="estatico-section container">
+        <h2>Projetos Sociais de Coleta de Resíduos</h2>
+        <p>A Fortes Engenharia desenvolve projetos sociais relacionados à coleta de resíduos recicláveis, promovendo a conexão entre Recicladores e Organizações Sociais.</p>
+        <p>Nossa missão é a de facilitar o processo de descarte, recolhimento, separação e reaproveitamento de materiais como plástico, papel, papelão, vidro e metais.</p>
+        <div class="tipos-projetos">
+            <div class="tipos">
+                <h3>Coleta de Plástico</h3>
+                <p>Iniciativas focadas em recolher e em destinar corretamente diferentes tipos de plástico, com o objetivo de gerar renda e inclusão social.</p>
+            </div>
+            <div class="tipos">
+                <h3>Coleta de Papel e Papelão</h3>
+                <p>Projetos focados no reaproveitamento, a fim de garantir que o material volte ao ciclo produtivo e gere valor para todos os envolvidos.</p> 
+            </div>
+            <div class="tipos">
+                <h3>Coleta de Vidro</h3>
+                <p>Campanhas que promovem a coleta e o transporte seguro de vidro, facilitando sua logística.</p>
+            </div>
+            <div class="tipos">
+                <h3>Coleta de Metal</h3>
+                <p>Projetos de recolhimento, armazenamento e separação de metais diversos, que possuem grande valor de reaproveitamento no mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Fortes Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<script src="javascript/script.js"></script>
+</body>
+
+</html>

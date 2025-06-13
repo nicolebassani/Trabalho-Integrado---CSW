@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização de Resíduos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/visualizacao-residuos.css">
+    <link rel="stylesheet" href="./css/nav-bar-secundaria.css">
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="./img/logo_fortes.png" alt="Logo Fortes Engenharia">
+                <h1>Fortes Engenharia</h1>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#quem-somos">Quem somos</a></li>
+                <li><a href="index.html#proposito">Propósito</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--NAV-BAR-->
+    <div class="top-content-overlay">
+        <div class="caminho-navegacao">
+            <span><a href="index.html">Página Inicial</a></span>
+            <span class="separador"> > </span>
+            <span><a href="./reciclador-home.html">Home</a></span>
+            <span class="separador"> > </span>
+            <span>Visualização de Resíduos</span>
+        </div>
+        <div class="user-profile-display">
+            <div class="profile-icon-placeholder">
+            </div>
+            <span>Reciclador</span>
+        </div>
+    </div>
+
+    <!--MAIN-->
+    <main class="internal-main-section">
+        <div class="internal-content-container container">
+            <div class="visualizacao-residuos-container">
+                <h1>Visualização de Resíduos</h1>
+                <div class="underline-title">
+                </div> 
+                <div class="conteudo-principal">
+                    <div class="filtros-box">
+                        <h2>Filtros</h2>
+                        <ul>
+                            <li>
+                                <input type="radio" id="tipoResiduo" name="filtro" checked>
+                                <label for="tipoResiduo">Tipo de Resíduo</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="quantidade" name="filtro">
+                                <label for="quantidade">Quantidade</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="localizacao" name="filtro">
+                                <label for="localizacao">Localização</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tabela-residuos">
+                        <h2>LISTA DE RESÍDUOS</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Quantidade</th>
+                                    <th>Localização</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Vidro</td>
+                                    <td>1000</td>
+                                    <td>Ponto de Coleta 1</td>
+                                </tr>
+                                <tr>
+                                    <td>Papel</td>
+                                    <td>5000</td>
+                                    <td>Ponto de Coleta 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Plástico</td>
+                                    <td>3000</td>
+                                    <td>Ponto de Coleta 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Metal</td>
+                                    <td>500</td>
+                                    <td>Ponto de Coleta 4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+     <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Fortes Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* NOTIFICAÇÕES - ORGANIZAÇÃO SOCIAL */
+
+/* Seção Principal Interna (internal-main-section) */
+.internal-main-section {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    flex-grow: 1;
+    margin-top: -45px;
+    padding-top: -50px;
+    min-height: 90vh;
+}
+
+.internal-content-container { 
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* ESTILOS DA BOX DE NOTIFICAÇÃO */
+.notificacao-box {
+    background-color: #003208;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    margin-top: 90px;
+    padding-top: 50px;
+    border: 2px solid #FFFFFF;
+    width: 90%;
+}
+
+.notificacao-box h1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: -15px;
+    border-bottom: 2px solid #f9f9f9;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.notificacao-item {
+    background-color: #f9f9f9;
+    border-left: 4px solid #003208;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.notificacao-item h2 {
+    color: #003208;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.notificacao-horario {
+    color: #1E3E17;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: right;
+    margin-top: -35px;
+    margin-right: 50px;
+}
+
+.notificacao-conteudo p {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding: 25px;
+}
+
+.notificacao-acoes {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.acao-btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; 
+    background: #257221;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    max-width: 250px;
+    align-items: center;
+}
+
+.acao-btn:hover {
+    background: #003208; 
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+
+/* Telas maiores que tablets, mas menores que desktops (até 992px)*/
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .internal-main-section {
+        padding: 20px 0;
+    }
+
+    .internal-content-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .main-footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-links {
+        margin-top: 15px;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+/* Tablets e Celulares Grandes */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .internal-main-section {
+        padding: 20px 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Celulares Pequenos */
+@media (max-width: 480px) {
+    .main-header, .main-footer {
+        padding: 10px 0;
+    }
+    .internal-main-section {
+        padding: 40px 0;
+    }
+}

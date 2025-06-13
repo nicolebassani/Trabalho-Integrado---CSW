@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+   
+<body>
+
+     <!-- HEADER-->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="./img/logo_fortes.png" alt="Logo Fortes Engenharia">
+                <h1>Fortes Engenharia</h1>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#quem-somos">Quem somos</a></li>
+                <li><a href="index.html#proposito">Propósito</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!--MAIN-->
+    <main class="internal-main-section">
+        <div class="internal-content-container container">
+            <section class="main-content-area contato-content">
+                <div class="contato-header">
+                    <h1>Fale Conosco!</h1>
+                    <p>Preencha o formulário abaixo ou utilize nossos outros canais:</p>
+                </div>
+                
+                <div class="contato-box">
+                    <form class="form-contato">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>Selecione o assunto...</option>
+                                <option value="reciclagem">Projetos de Reciclagem</option>
+                                <option value="parceria">Parcerias</option>
+                                <option value="doacao">Doação de Resíduos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="button-enviar">Enviar Mensagem</button>
+                    </form>
+                    
+                    <div class="contato-info">
+                        <h3>Nossos Canais:</h3>
+                        <ul>
+                            <li>(DDD) XXXX-XXXX</li>
+                            <li>contato@fortesengenharia.com</li>
+                            <li>Seg-Sex: 8h às 18h</li>
+                        </ul>
+                        
+                        <div class="social-links">
+                            <a href="#" class="social-icon">In</a> <a href="#" class="social-icon">X</a>  <a href="#" class="social-icon">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+     <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Fortes Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

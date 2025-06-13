@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Resíduos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro-de-residuos.css">
+    <link rel="stylesheet" href="./css/nav-bar-secundaria.css">
+</head>
+<body>
+
+    <!-- HEADER-->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="./img/logo_fortes.png" alt="Logo Fortes Engenharia">
+                <h1>Fortes Engenharia</h1>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#quem-somos">Quem somos</a></li>
+                <li><a href="index.html#proposito">Propósito</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--NAV-BAR-->
+    <div class="top-content-overlay">
+        <div class="caminho-navegacao">
+            <span><a href="index.html">Página Inicial</a></span>
+            <span class="separador"> > </span>
+            <span><a href="./organizacao-home.html">Home</a></span>
+            <span class="separador"> > </span>
+            <span>Cadastro de Resíduos</span>
+        </div>
+        <div class="user-profile-display">
+            <div class="profile-icon-placeholder">
+            </div>
+            <span>Organização Social</span>
+        </div>
+    </div>
+
+    <!--MAIN-->
+    <main class="internal-main-section">
+
+        <div class="internal-content-container container">
+            <div class="residuo-box">
+                <h2>Cadastro dos Resíduos Gerados</h2>
+
+                <form class="residuo-form">
+                    <div class="form-group">
+                        <label for="residuo-tipo-1">Tipo de Resíduo:</label>
+                            <select id="residuo-tipo-1" name="tipoResiduo1">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="papel">Papel/Papelão</option>
+                                <option value="plastico">Plástico</option>
+                                <option value="vidro">Vidro</option>
+                                <option value="metal">Metal</option>
+                            </select>
+                   </div>
+
+                   <div class="form-group">
+                        <label for="quantidade-1">Quantidade:</label>
+                            <select id="quantidade-1" name="quantidade1">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="1-10kg">1-10 kg</option>
+                                <option value="10-50kg">10-50 kg</option>
+                                <option value="50+kg">50+ kg</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group"> <label for="residuo-tipo-2">Tipo de Resíduo:</label>
+                        <select id="residuo-tipo-2" name="tipoResiduo2">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="papel">Papel/Papelão</option>
+                            <option value="plastico">Plástico</option>
+                            <option value="vidro">Vidro</option>
+                            <option value="metal">Metal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group"> <label for="quantidade-2">Quantidade:</label>
+                        <select id="quantidade-2" name="quantidade2">
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="1-10kg">1-10 kg</option>
+                            <option value="10-50kg">10-50 kg</option>
+                            <option value="50+kg">50+ kg</option>
+                        </select>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="button-cadastrar">Cadastrar</button>
+                    </div>
+                </form>
+            </div>       
+        </div>
+    </main>
+
+    <!--FOOTER-->
+     <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Fortes Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

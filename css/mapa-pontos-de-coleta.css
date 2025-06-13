@@ -1,0 +1,226 @@
+/* MAPA DE PONTOS DE COLETA - RECICLADOR */
+
+/* Seção Principal Interna (internal-main-section) */
+
+.internal-main-section {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    flex-grow: 1;
+    margin-top: -45px;
+    padding-top: -50px;
+    min-height: 90vh;
+}
+
+.internal-content-container { 
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Conteúdo Principal */
+
+.main-content-area {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    width: 100%; 
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pontos-descarte-wrapper {
+    display: flex;
+    gap: 30px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%; 
+    max-width: 1000px;
+}
+
+.lista-pontos-container {
+    background-color: #003208; 
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px; 
+    flex-shrink: 0; 
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.lista-pontos-container h2 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.ponto-item {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ponto-item h3 {
+    color: #003208;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.ponto-item p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.mapa-container {
+    background-color: #FFFFFF; 
+    border-radius: 20px;
+    padding: 15px;
+    flex-grow: 1; 
+    height: 500px; 
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#map {
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.filtros-container {
+    background-color: #003208; 
+    border-radius: 20px;
+    padding: 20px 30px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 1000px; 
+}
+
+.filtros-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.filtros-header i {
+    color: #257221;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #257221;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    position: relative;
+}
+
+.radio-group input[type="radio"]:checked {
+    background-color: #257221;
+    border-color: #FFFFFF;
+}
+
+.radio-group label {
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+
+    .pontos-descarte-wrapper {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .lista-pontos-container,
+    .mapa-container {
+        width: 90%; 
+        max-width: 500px; 
+    }
+
+    .mapa-container {
+        height: 400px; 
+    }
+
+    .filtros-container {
+        flex-direction: column; 
+        gap: 15px;
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .internal-main-section {
+        padding: 20px 0;
+    }
+
+    .lista-pontos-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .ponto-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .ponto-item p {
+        font-size: 0.9rem;
+    }
+
+    .lista-pontos-container,
+    .mapa-container,
+    .filtros-container {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .mapa-container {
+        height: 300px;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Pontos de Coleta</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mapa-pontos-de-coleta.css">
+    <link rel="stylesheet" href="./css/nav-bar-secundaria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER-->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo-link">
+            <div class="logo">
+                <img src="./img/logo_fortes.png" alt="Logo Fortes Engenharia">
+                <h1>Fortes Engenharia</h1>
+            </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#quem-somos">Quem somos</a></li>
+                <li><a href="index.html#proposito">Propósito</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--NAV-BAR-->
+    <div class="top-content-overlay">
+        <div class="caminho-navegacao">
+            <span><a href="index.html">Página Inicial</a></span>
+            <span class="separador"> > </span>
+            <span><a href="./reciclador-home.html">Home</a></span>
+            <span class="separador"> > </span>
+            <span>Mapa Pontos de Coleta</span>
+        </div>
+        <div class="user-profile-display">
+            <div class="profile-icon-placeholder">
+            </div>
+            <span>Reciclador</span>
+        </div>
+    </div>
+
+    <!--MAIN-->
+    <main class="internal-main-section">
+        <div class="internal-content-container container">
+            <section class="main-content-area">
+                <div class="pontos-descarte-wrapper">
+                    <div class="lista-pontos-container">
+                        <h2>Pontos de Coleta</h2>
+                        <div class="ponto-item">
+                            <h3>Ponto de Coleta 1:</h3>
+                            <p>Av. Luciano das Neves, 2100,<br>Centro, Vila Velha - ES</p>
+                        </div>
+                        <div class="ponto-item">
+                            <h3>Ponto de Coleta 2:</h3>
+                            <p>Av. Nossa Senhora da Penha, 570,<br>Praia do Canto, Vitória - ES</p>
+                        </div>
+                    </div>
+
+                    <div class="mapa-container">
+                        <div id="map" style="height: 100%; width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="filtros-container">
+                    <div class="filtros-header">
+                        <i class="fas fa-filter"></i>
+                        <span>Filtros</span>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="tipoResiduo" name="filtroMapa" value="tipoResiduo">
+                        <label for="tipoResiduo">Tipo de resíduo</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="raioDistancia" name="filtroMapa" value="raioDistancia">
+                        <label for="raioDistancia">Raio de distância</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+     <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Fortes Engenharia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script src="./javascript/mapa-descarte.js"></script>
+</body>
+</html>
